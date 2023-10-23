@@ -1,3 +1,6 @@
+#Steve
+#10.21
+
 def is_divisible(num1, num2):
     """
     Checks to see if one number is evenly divisible by the second
@@ -5,7 +8,10 @@ def is_divisible(num1, num2):
     :param num2: The divisor
     :return: True if num1 is evenly divisible by num2, false otherwise
     """
-
+    if num2%num1 == 0:
+        return True
+    else:
+        return False
     pass
 
 
@@ -15,7 +21,7 @@ def main():
     num = int(input("What is the first number? "))
     check = int(input("What is the second number? "))
 
-    if is_divisible(num, check):
+    if is_divisible(num, check) == True:
         print(num, "is divisible by", check)
     else:
         print(num, "is not divisible by", check)
